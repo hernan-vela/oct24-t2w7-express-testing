@@ -1,25 +1,27 @@
 {
   "name": "oct24-t2w7-express-testing",
   "version": "1.0.0",
-  "description": "Review of Express and intro to NodeJS and ExpressJS testing",
+  "description": "Review of Express and intro to NodeJS and ExpressJS testing.",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "node --watch src//inde.js",
+    "test-doh":"jest --detectOpenHandles",
+    "test-watch":"jest --watch",
+    "dev": "node --watch src/index.js",
     "start": "NODE_ENV=production node src/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hernan-vela/oct24-t2w7-express-testing.git"
+    "url": "git+https://github.com/AlexStormwood/oct24-t2w7-express-testing.git"
   },
   "keywords": [],
-  "author": "Sam Velasquez",
+  "author": "",
   "license": "MIT",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/hernan-vela/oct24-t2w7-express-testing/issues"
+    "url": "https://github.com/AlexStormwood/oct24-t2w7-express-testing/issues"
   },
-  "homepage": "https://github.com/hernan-vela/oct24-t2w7-express-testing#readme",
+  "homepage": "https://github.com/AlexStormwood/oct24-t2w7-express-testing#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
@@ -29,6 +31,7 @@
     "mongoose": "^8.14.2"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "supertest": "^7.1.0"
   }
 }
